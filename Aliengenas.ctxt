@@ -1,9 +1,15 @@
 #BlueJ class context
 comment0.target=Aliengenas
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Aliengenas\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Aliengenas()
-comment2.params=
-comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Aliengenas\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=3
+comment2.params=v
+comment2.target=Aliengenas(int)
+comment3.params=MiUniverso
+comment3.target=void\ addedToWorld(greenfoot.World)
+comment4.params=
+comment4.target=void\ move()
+comment5.params=
+comment5.target=void\ Hancur()
+comment6.params=
+comment6.target=void\ act()
+numComments=7
