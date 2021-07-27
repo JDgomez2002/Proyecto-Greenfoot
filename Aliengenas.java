@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 public class Aliengenas extends Actor
 {
@@ -6,12 +6,7 @@ public class Aliengenas extends Actor
     private boolean toRemove = false;
 //25.50
     public Aliengenas()
-    {
-        // GreenfootImage myImage = getImage();
-        // int myNewHight = (int)myImage.getHeight()/12;
-        // int myNewWidht = (int)myImage.getWidth()/12;
-        // myImage.scale(myNewWidht, myNewHight);
-        
+    {    
     }
 
     public Aliengenas(int v){
@@ -19,11 +14,6 @@ public class Aliengenas extends Actor
     }
     
     public void addedToWorld(World MiUniverso){
-        // GreenfootImage myImage = getImage();
-        // int myNewHight = (int)myImage.getHeight()/12;
-        // int myNewWidht = (int)myImage.getWidth()/12;
-        // myImage.scale(myNewWidht, myNewHight);
-        
         setRotation(0);
     }
     
@@ -46,7 +36,6 @@ public class Aliengenas extends Actor
             int px = -20+Greenfoot.getRandomNumber(40);//-20.40
             int py = -20+Greenfoot.getRandomNumber(40);
             getWorld().addObject(new MiEfecto1(getImage()),getX()+px,getY()+py);
-            //getWorld().addObject(new MiEfecto1(getImage()),px,py);
         }
         getWorld().addObject(new MiEfecto2(),getX(),getY());
         toRemove = true;
@@ -54,7 +43,6 @@ public class Aliengenas extends Actor
     
     public void act() 
     {
-        //move();
         if(!toRemove)move();
         else getWorld().removeObject(this);
     }

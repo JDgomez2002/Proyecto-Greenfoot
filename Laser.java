@@ -1,5 +1,4 @@
     import greenfoot.*;
-    //import java.awt.Color;
     
     public class Laser extends Actor
     {
@@ -16,13 +15,6 @@
     
     public void act() 
     {
-        // if(toRemove==false)
-        // {
-            // Actor actor = getOneIntersectingObject(Aliengenas.class);
-            // setLocation(getX()+vx,getY());
-            // if (getX()>getWorld().getWidth()+vx)toRemove=true;//200
-        // }
-        
         if(!toRemove){
             setLocation(getX()+vx,getY());
             Actor actor = getOneIntersectingObject(Aliengenas.class);

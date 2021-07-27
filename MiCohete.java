@@ -1,14 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 public class MiCohete extends Actor
 {
     public MiCohete()
     {
-        // GreenfootImage myImage = getImage();
-        // int myNewHight = (int)myImage.getHeight()/12;
-        // int myNewWidht = (int)myImage.getWidth()/12;
-        // myImage.scale(myNewWidht, myNewHight);
-        
     }
     private int targetx=0,targety=0;
     private int jeda=0;
@@ -26,7 +21,6 @@ public class MiCohete extends Actor
             int px = -20+Greenfoot.getRandomNumber(40);//-20.40
             int py = -20+Greenfoot.getRandomNumber(40);
             getWorld().addObject(new MiEfecto1(getImage()),getX()+px,getY()+py);
-            //getWorld().addObject(new MiEfecto1(getImage()),px,py);
         }
         getWorld().addObject(new MiEfecto2(),getX(),getY());
         toRemove = true;

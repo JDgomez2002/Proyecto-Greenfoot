@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 public class MiEfecto1 extends Actor
 {
@@ -25,7 +25,6 @@ public class MiEfecto1 extends Actor
     public void act() 
     {
         setLocation(getX()+vx,getY()+vy);
-        //setRotation(getRotation()+rotation);
         if(getX()<-200 || getY()<-200 || getX()>getWorld().getWidth()+200 || getY()>getWorld().getHeight()+200)//200
         {
             getWorld().removeObject(this);
