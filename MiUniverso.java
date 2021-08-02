@@ -2,6 +2,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class MiUniverso extends World
 {
+    GreenfootSound myMusic = new GreenfootSound("spacewar.mp3");
+    
     private int jeda=0;
     public MiUniverso()
     {
@@ -10,6 +12,8 @@ public class MiUniverso extends World
     }
     public void act()
     {
+        myMusic.play();
+        
         if(jeda>0)jeda--;
         else jeda = 20;
         if(jeda==1){
@@ -18,4 +22,5 @@ public class MiUniverso extends World
             //addObject(new Aliengenas(-(2+Greenfoot.getRandomNumber(3))), getWidth()+200,py);
         }
     }
+
 }

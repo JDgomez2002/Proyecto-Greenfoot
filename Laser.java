@@ -22,7 +22,7 @@
             {
                 ((Aliengenas)actor).Hancur();
             }
-            if (getX()>getWorld().getWidth()-200)toRemove=true;//200
+            if (getX()>getWorld().getWidth()-120)toRemove=true;//+200
         }
         else{
             getWorld().removeObject(this);
